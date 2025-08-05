@@ -17,7 +17,7 @@ namespace GP2Y0E03_IT
 
     void GP2Y0E03_IT::setup_read(void)
     {
-        _i2cITSystemIndex = _i2cITSystem->addMemRead(_address, LOCATION_Distance, 2, _rxArray, 2);
+        _i2cITSystemIndex = _i2cITSystem->addMemRead(_address, LOCATION_Distance, 1, _rxArray, 2);
     }
 
     double GP2Y0E03_IT::read(void)
